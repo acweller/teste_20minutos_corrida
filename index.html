@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de 20 Minutos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">Teste de 20 Minutos</h1>
+
+        <form class="formulario">
+            <div class="campo-grupo">
+                <label for="batimentos" class="campo-label">Batimentos Cardíacos Médios (bpm)</label>
+                <input 
+                    type="number" 
+                    id="batimentos" 
+                    class="campo-input" 
+                    placeholder="Ex: 150"
+                    min="0"
+                    required
+                >
+            </div>
+
+            <div class="campo-grupo">
+                <label for="pace-minutos" class="campo-label">Pace Médio por Quilômetro</label>
+                <div class="pace-container">
+                    <input 
+                        type="number" 
+                        id="pace-minutos" 
+                        class="campo-input campo-pace" 
+                        placeholder="Min"
+                        min="0"
+                        max="59"
+                        required
+                    >
+                    <span class="separador">:</span>
+                    <input 
+                        type="number" 
+                        id="pace-segundos" 
+                        class="campo-input campo-pace" 
+                        placeholder="Seg"
+                        min="0"
+                        max="59"
+                        required
+                    >
+                </div>
+            </div>
+
+            <button type="submit" class="botao-submit">Registrar Dados</button>
+        </form>
+
+        <div id="resultado" class="resultado">
+            <h3 class="resultado-titulo">Resultados das Zonas</h3>
+            <div class="tabela-container">
+                <div class="tabela-header">
+                    <div class="tabela-celula cabecalho">Zona</div>
+                    <div class="tabela-celula cabecalho">Batimentos Máximos</div>
+                    <div class="tabela-celula cabecalho">Pace Mínimo</div>
+                </div>
+                <div id="tabela-corpo" class="tabela-corpo">
+                    <!-- As linhas serão adicionadas aqui dinamicamente -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
