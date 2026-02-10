@@ -73,8 +73,15 @@ O programa calcula 7 zonas diferentes com base nos seguintes critérios:
 
 ## 📁 Estrutura de Arquivos
 
+### Estrutura do Projeto
 
-calculadora-zonas-treino/ │ ├── index.html # Estrutura HTML do aplicativo ├── styles.css # Estilos e layout ├── script.js # Lógica de cálculo e interatividade └── README.md # Documentação do projeto
+```text
+teste_20minutos_corrida/
+├── index.html # Estrutura HTML do aplicativo
+├── styles.css # Estilos e layout
+├── script.js # Lógica de cálculo e interatividade
+└── README.md # Documentação do projeto
+```
 
 ## 💡 Exemplo de Uso
 
