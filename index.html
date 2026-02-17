@@ -8,6 +8,12 @@
 </head>
 <body>
     <div class="container">
+        <!-- Botão de Toggle Modo Escuro -->
+        <button class="toggle-tema" onclick="toggleTema()" aria-label="Alternar tema">
+            <span class="icone-sol">☀️</span>
+            <span class="icone-lua">🌙</span>
+        </button>
+
         <h1 class="titulo">Teste de 20 Minutos</h1>
 
         <form class="formulario">
@@ -51,6 +57,20 @@
             <button type="submit" class="botao-submit">Registrar Dados</button>
         </form>
 
+        <div class="acoes-historico">
+            <button type="button" class="botao-secundario" onclick="exportarCSV()">
+                📥 Exportar CSV
+            </button>
+            <button type="button" class="botao-secundario" onclick="verHistorico()">
+                📊 Ver Histórico
+            </button>
+            <button type="button" class="botao-secundario botao-perigo" onclick="limparHistorico()">
+                🗑️ Limpar Histórico
+            </button>
+        </div>
+
+        <div id="info-registros" class="info-registros"></div>
+
         <div id="resultado" class="resultado">
             <h3 class="resultado-titulo">Resultados das Zonas</h3>
             <div class="tabela-container">
@@ -62,6 +82,14 @@
                 <div id="tabela-corpo" class="tabela-corpo">
                     <!-- As linhas serão adicionadas aqui dinamicamente -->
                 </div>
+            </div>
+        </div>
+
+        <div id="modal-historico" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar" onclick="fecharHistorico()">&times;</span>
+                <h2 class="titulo">Histórico de Registros</h2>
+                <div id="lista-historico" class="lista-historico"></div>
             </div>
         </div>
     </div>
