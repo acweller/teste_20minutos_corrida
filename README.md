@@ -11,6 +11,9 @@ Este é um programa web desenvolvido para calcular automaticamente as zonas de t
 - **Visualização em Tabela**: Apresentação clara e organizada dos resultados
 - **Design Responsivo**: Funciona perfeitamente em desktop e dispositivos móveis
 - **Validação de Dados**: Campos com validação automática para garantir entrada correta
+- **Salvar Histórico**: Salva o histórico de testes em LocalStorage do próprio navegador de Internet
+- **Modo escuro**: Inclusão de temas escuros e claros. Inicia com o mesmo tema utilizado pelo sistema. Posteriormente, utiliza a última opção escolhida.
+
 
 ## 🚀 Como Usar
 
@@ -153,10 +156,9 @@ Para dúvidas ou sugestões:
 
 ## 🔮 Melhorias Futuras
 
-- [ ] Salvar histórico de testes
+- [ ] Salvar histórico de testes em Banco de Dados
 - [ ] Exportar resultados em PDF
 - [ ] Gráficos de evolução
-- [ ] Modo escuro
 - [ ] Múltiplos perfis de usuário
 - [ ] Integração com dispositivos de corrida
 - [ ] Calculadora de ritmo para diferentes distâncias
